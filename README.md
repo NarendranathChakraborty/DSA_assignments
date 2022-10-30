@@ -1,6 +1,7 @@
 # Java Mini Project
 
   This is a Service Management System for all the professionals and users .
+  
   It also has a admin who can monitor the professionals and users .
 
 ### It has all the multiple features which are as follows:
