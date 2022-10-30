@@ -5,7 +5,7 @@
 
 ### It has all the multiple features which are as follows:
 
-1. Admin can delete any user,professional,location and service .
+1. Admin can delete any user ,professional ,location and service .
 2. Admin also can add as many services and locations depending upon the need .
 3. The system also has a rating system inbuilt which rates the professionals.
 
