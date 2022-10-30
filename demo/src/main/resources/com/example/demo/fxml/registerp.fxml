@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1270.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.registerpcontrol">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1270.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3_20220905_112057_0002.png" />
+         </image></ImageView>
+            <BorderPane layoutX="47.0" layoutY="57.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="525.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="1469.0" AnchorPane.topAnchor="57.0" />
+      <Label layoutX="218.0" layoutY="92.0" prefHeight="52.0" prefWidth="341.0" text="Doorstep Services">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="174.0" prefHeight="78.0" prefWidth="189.0" text="First Name :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="233.0" prefHeight="78.0" prefWidth="189.0" text="Last Name :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="298.0" prefHeight="78.0" prefWidth="189.0" text="Email :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="364.0" prefHeight="78.0" prefWidth="255.0" text="Phone Number :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstname" layoutX="320.0" layoutY="193.0" prefHeight="40.0" prefWidth="211.0" />
+      <TextField fx:id="lastname" layoutX="320.0" layoutY="252.0" prefHeight="40.0" prefWidth="211.0" />
+      <TextField fx:id="email" layoutX="320.0" layoutY="311.0" prefHeight="40.0" prefWidth="211.0" />
+      <TextField fx:id="phonenumber" layoutX="320.0" layoutY="383.0" prefHeight="40.0" prefWidth="211.0" />
+      <Label layoutX="625.0" layoutY="176.0" prefHeight="78.0" prefWidth="189.0" text="Username :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="233.0" prefHeight="78.0" prefWidth="189.0" text="Password :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="298.0" prefHeight="78.0" prefWidth="189.0" text="Gender :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="357.0" prefHeight="78.0" prefWidth="211.0" text="Date of Birth :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass" layoutX="858.0" layoutY="252.0" prefHeight="40.0" prefWidth="211.0" />
+      <TextField fx:id="username" layoutX="857.0" layoutY="195.0" prefHeight="40.0" prefWidth="211.0" />
+      <Button defaultButton="true" layoutX="47.0" layoutY="28.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="44.0" text="&lt;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button defaultButton="true" layoutX="531.0" layoutY="612.0" mnemonicParsing="false" onAction="#submitbuttononaction" prefHeight="44.0" prefWidth="120.0" text="Submit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="gender1" layoutX="858.0" layoutY="311.0" onMouseClicked="#comb3" prefHeight="40.0" prefWidth="211.0" />
+      <DatePicker fx:id="datePicker" layoutX="858.0" layoutY="376.0" prefHeight="40.0" prefWidth="211.0" />
+      <Label fx:id="label1" layoutX="78.0" layoutY="614.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="429.0" prefHeight="78.0" prefWidth="255.0" text="Service :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="services" layoutX="320.0" layoutY="448.0" onMouseClicked="#comb1" prefHeight="40.0" prefWidth="211.0" />
+      <Label layoutX="625.0" layoutY="423.0" prefHeight="78.0" prefWidth="211.0" text="Location :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="locations" layoutX="857.0" layoutY="448.0" onMouseClicked="#comb2" prefHeight="40.0" prefWidth="211.0" />
+      <Label layoutX="65.0" layoutY="493.0" prefHeight="78.0" prefWidth="255.0" text="Experience :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="yos" layoutX="320.0" layoutY="512.0" prefHeight="40.0" prefWidth="211.0" />
+      <Label layoutX="625.0" layoutY="493.0" prefHeight="78.0" prefWidth="211.0" text="Image :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textArea" layoutX="858.0" layoutY="519.0" prefHeight="40.0" prefWidth="211.0" />
+      <Button fx:id="browse" defaultButton="true" layoutX="1068.0" layoutY="517.0" mnemonicParsing="false" onAction="#setBrowse" prefHeight="44.0" prefWidth="120.0" text="Browse">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="iv" fitHeight="150.0" fitWidth="200.0" layoutX="988.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="83.0" fitWidth="75.0" layoutX="120.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/20221006_151342_0000.png" />
+         </image>
+      </ImageView>
+         </children>
+      </AnchorPane>
